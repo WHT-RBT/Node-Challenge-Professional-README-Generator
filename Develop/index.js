@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 const inquirer = require('inquirer');
-const generateMarkdown = require("Develop\utils\generateMarkdown.js");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
 const questions = [{
@@ -54,7 +54,7 @@ const questions = [{
         if (textInput) {
             return true;
         } else {
-            console.log('Please enter a brief description of the application.');
+            console.log('Please enter instructions on how to use this application.');
             return false;
         }
     }
@@ -130,7 +130,7 @@ const questions = [{
 },
 {
     type: 'input',
-    name: 'gh-link',
+    name: 'github',
     message: 'What is your GitHub username and link? (Required)',
     validate: textInput => {
         if (textInput) {
