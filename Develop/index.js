@@ -36,12 +36,12 @@ const questions = [{
 {
     type: 'input',
     name: 'description',
-    message: 'Please explain what your application does and what your motivation was in creating this application. *Required*',
+    message: 'Please explain what your application does and what your motivation was in creating this application.',
     validate: textInput => {
         if (textInput) {
             return true;
         } else {
-            console.log('Please enter a brief description of the application.');
+            console.log('Please explain what your application was created for and your motivation for creating it.');
             return false;
         }
     }
@@ -49,12 +49,12 @@ const questions = [{
 {
     type: 'input',
     name: 'usage',
-    message: 'Please provide instructions on how to use this application. Please be descriptive and add images later in your README file *Required*',
+    message: 'Please provide instructions on how to use this application. **Please be descriptive and add images later in your README file**',
     validate: textInput => {
         if (textInput) {
             return true;
         } else {
-            console.log('Please enter instructions on how to use this application.');
+            console.log('Please enter instructions on how to use this application. Adding images later');
             return false;
         }
     }
@@ -67,7 +67,7 @@ const questions = [{
         if (textInput) {
             return true;
         } else {
-            console.log('Please enter a brief description of the application.');
+            console.log('Please list any features you would like to highlight for this project.');
             return false;
         }
     }
@@ -80,7 +80,7 @@ const questions = [{
         if (textInput) {
             return true;
         } else {
-            console.log('Please enter a brief description of the application.');
+            console.log('Please enter a any software or extensions that are required for this application.');
             return false;
         }
     }
@@ -89,12 +89,12 @@ const questions = [{
     type: 'checkbox',
     name: 'applications',
     message: 'Please choose what applications were used.',
-    choices: ['CSS', 'HTML', 'JavaScript', 'Node.js'],
+    choices: ['CSS\n','HTML\n','JavaScript\n','Node.js\n'],
     validate: textInput => {
         if (textInput) {
             return true;
         } else {
-            console.log('Please select an application.');
+            console.log('Please select applications used to create your project.');
             return false;
         }
     }
@@ -103,14 +103,12 @@ const questions = [{
     type: 'checkbox',
     name: 'license',
     message: 'Please choose a license.',
-    choices: ['GNU AGPLv3', 'GNU GPLv3',
-        'GNU LGPLv3', 'Mozilla Public License 2.0',
-        'Apache License 2.0', 'MIT License', 'none'],
+    choices: ['GNU General Public\n','Mozilla Public License\n',        'Apache License 2.0\n','MIT License\n','Creative Commons License\n','BSD Zero Clause License\n','None'],
     validate: textInput => {
         if (textInput) {
             return true;
         } else {
-            console.log('Please select a license.');
+            console.log('Please select any license used.');
             return false;
         }
     }
@@ -122,10 +120,7 @@ const questions = [{
     validate: textInput => {
         if (textInput) {
             return true;
-        } else {
-            console.log('Please enter a brief description of the application.');
-            return false;
-        }
+            }
     }
 },
 {

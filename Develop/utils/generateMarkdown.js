@@ -49,26 +49,38 @@ function generateMarkdown(data) {
   
   ${renderLicenseBadge(data.license)}
 
+  
   ## Description
   ${data.description}
+
 
   ## Usage
   ${data.usage}
 
+
   ## Features
   ${data.features}
+
 
   ## Prerequisites
   ${data.prerequisites}
 
+
   ## Applications Used
   ${data.applications}  
+
+
+  ## Screeenshot of Application
+  ![alt text](assets/images/screenshot.png)
+
 
   ## Licenses
   ${data.license}
 
+
   ## Collaborators
   ${data.collaborators}
+
 
   ## Please contact me using the following link:
   ${data.github}`;
