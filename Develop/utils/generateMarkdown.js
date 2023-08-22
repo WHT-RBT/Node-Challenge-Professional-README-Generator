@@ -50,6 +50,18 @@ function generateMarkdown(data) {
   ${renderLicenseBadge(data.license)}
 
   
+  ## Table of Contents
+  1. [Description](#description)
+  2. [Usage](#usage)
+  3. [Features](#features)
+  4. [Prerequisites](#prerequisites)
+  5. [Applications Used](#applications-used)  
+  6. [Screenshots](#screenshots)
+  7. [Collaborators](#collaborators)
+  8. [Links](#links)
+  9. [License](#license)
+
+
   ## Description
   ${data.description}
 
@@ -69,21 +81,25 @@ function generateMarkdown(data) {
   ## Applications Used
   ${data.applications}  
 
+  
+  ## Tests
+  To run tests, run the following command:
+  ${data.tests}
 
-  ## Screeenshot of Application
+  ## Screeenshot
   ![alt text](assets/images/screenshot.png)
-
-
-  ## Licenses
-  ${data.license}
 
 
   ## Collaborators
   ${data.collaborators}
 
 
-  ## Please contact me using the following link:
-  ${data.github}`;
+  ## Links:
+  If you have any questions you contact me directly at ${data.email}. You can find more of my work at ${data.github}.
+
+
+  ## Licenses
+  This project is licensed under the ${data.license}.`;
 
 }
 

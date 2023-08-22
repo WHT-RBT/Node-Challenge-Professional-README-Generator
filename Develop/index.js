@@ -9,13 +9,13 @@ const questions = [{
 
     type:   'checkbox',
     name:   'type',
-    message: 'Please confirm you are creating a README file by selecting it below.',
-    choices: ['README'],
+    message: 'Would you like to generate your README file?',
+    choices: ['YourREADME'],
     validate: textInput => {
         if (textInput) {
             return true;
         } else {
-            console.log('Please select README.');
+            console.log('Please select YourREADME.');
             return false;
         }
     }
@@ -36,12 +36,12 @@ const questions = [{
 {
     type: 'input',
     name: 'description',
-    message: 'Please explain what your application does and what your motivation was in creating this application.',
+    message: 'Please give a summary of what your application does and what your motivation was in creating this application.',
     validate: textInput => {
         if (textInput) {
             return true;
         } else {
-            console.log('Please explain what your application was created for and your motivation for creating it.');
+            console.log('Please give a summary of what your application does and what your motivation was in creating this application');
             return false;
         }
     }
@@ -62,7 +62,7 @@ const questions = [{
 {
     type: 'input',
     name: 'features',
-    message: 'Please list any features you would like to highlight. ',
+    message: 'Please list any features you would like to highlight for this project. ',
     validate: textInput => {
         if (textInput) {
             return true;
@@ -75,40 +75,67 @@ const questions = [{
 {
     type: 'input',
     name: 'prerequisites',
-    message: 'Please list any steps or prerequisites needed in order to use this application. (git, node, inquirer, etc.',
+    message: 'Please list any steps or prerequisites needed in order to use this application. (git, node, inquirer, etc.)',
     validate: textInput => {
         if (textInput) {
             return true;
         } else {
-            console.log('Please enter a any software or extensions that are required for this application.');
+            console.log('Please list any steps or prerequisites needed in order to use this application (git, node, inquirer, etc.)');
             return false;
         }
     }
 },
-{ //checkbox that allows application choice
+
+{ //checkbox that allows selection for technologies used in application
     type: 'checkbox',
     name: 'applications',
     message: 'Please choose what applications were used.',
-    choices: ['CSS\n','HTML\n','JavaScript\n','Node.js\n'],
+    choices: [
+        '-CSS\n', 
+        '-HTML\n', 
+        '-Handlebars\n', 
+        '-JavaScript\n', 
+        '-Node.js\n', 
+        '-JSON\n', 
+        '-Dotenv\n', 
+        '-SQL\n', 
+        '-MySQL2\n', 
+        '-Sequelize\n', 
+        '-MongoDB\n', 
+        '-Mongoose\n'],
     validate: textInput => {
         if (textInput) {
             return true;
         } else {
-            console.log('Please select applications used to create your project.');
+            console.log('Please select the applications used to create this project.');
             return false;
         }
     }
 },
+{   
+    type: 'input',
+    name: 'tests',
+    message: 'What command should be run for testing?',
+    validate: textInput => {
+        if (textInput) {
+            return true;
+        } else {
+            console.log('Please list your test commands.');
+            return false;
+        }
+    }
+},
+
 { //checkbox that allows license choice
     type: 'checkbox',
     name: 'license',
     message: 'Please choose a license.',
-    choices: ['GNU General Public\n','Mozilla Public License\n',        'Apache License 2.0\n','MIT License\n','Creative Commons License\n','BSD Zero Clause License\n','None'],
+    choices: ['GNU General Public\n','Mozilla Public License\n','Apache License 2.0\n','MIT License\n','Creative Commons License\n','BSD Zero Clause License\n','None'],
     validate: textInput => {
         if (textInput) {
             return true;
         } else {
-            console.log('Please select any license used.');
+            console.log('Please select a license used.');
             return false;
         }
     }
@@ -132,6 +159,19 @@ const questions = [{
             return true;
         } else {
             console.log('Please paste your GitHub username and link');
+            return false;
+        }
+    }
+},
+{
+    type: 'input',
+    name: 'email',
+    message: 'What is your email address? (Required)',
+    validate: textInput => {
+        if (textInput) {
+            return true;
+        } else {
+            console.log('Please enter your email address');
             return false;
         }
     }

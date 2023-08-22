@@ -1,69 +1,65 @@
-# Professional README Generator Starter Code
+# Professional README Generator
 
-[How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
+<br>
 
+![Github MIT licence](https://img.shields.io/badge/license-MIT-blue)
 
+![JavaScript](https://img.shields.io/badge/-JavaScript-yellow) ![Dotenv](https://img.shields.io/badge/-Dotenv-purple) ![NODE](https://img.shields.io/badge/-NODE-orange) ![JSON](https://img.shields.io/badge/JSON-0F2BF2)
 
-# Node-Challenge: Professional README Generator
+<br>
+
+## Table of Contents
+
+- [Description](#description)
+- [Getting Started](#getting-started)
+- [Walkthrough Video](#walkthrough-video)
+- [Links](#links)
+- [License](#license)
+
+<br>
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+This README Generator helps users easily create a README.md file through the command-line. User input is collected through the command-line by answering questions that will be used to generate the README file, where you can then add images or screenshots to after creation. 
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+<br>
 
-## Table of Contents (Optional)
+## Getting Started
 
-If your README is long, add a table of contents to make it easy for users to find what they need.
+To use this application you first need to install all dependencies below from the command line:
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
 
-## Installation/Prerequisites
+- Open your terminal and run this command: &nbsp; `npm init -y`
+- Then start the application with: &nbsp; `node index.js`
+- This will start the application for you to answer questions to generate your README.md
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+<br>
 
-## Usage
+## Walkthrough Video
 
-Provide instructions and examples for use. Include screenshots as needed.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+Use the following link to watch the walkthrough video: <br> 
+https://drive.google.com/file/d/1I9kvoxz84p8-ugZYnhlAfkpW_nM1GpdS/view 
+<br> 
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+This link will open the walkthrough video located in the assets folder: &nbsp; [Walkthrough Video](Develop/assets/Walkthrough_Video.webm)
 
-## Credits
+<br>
 
-List your collaborators, if any, with links to their GitHub profiles.
+![Alt text](Develop/assets/walkthrough_video.gif)
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+<br>
 
-If you followed tutorials, include links to those here as well.
+## Links
+
+Github Link: <br>
+    https://github.com/WHT-RBT
+<br>
+Repository Link: <br>
+    https://github.com/WHT-RBT/Node-Challenge-Professional-README-Generator.git
+
+<br>
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
+NOTICE: This application is covered under the &nbsp; `MIT License`
